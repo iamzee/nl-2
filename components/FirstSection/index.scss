@@ -1,0 +1,70 @@
+.first-section {
+    background-image: url('./images/trianglify-lowres.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: flex-end;
+
+    &__header {
+        position: absolute;
+        top: 15%;
+        left: 5%;
+    
+        background: #333231;
+        color: #fff;
+        padding: 16px;
+        border: 10px #ec2227 solid;
+        max-width: 50%;
+        
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 2.8rem;
+        letter-spacing: 5px;
+        margin-bottom: 1rem;
+        
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.3;
+    }
+
+    &__cover {
+        background-image: url('./images/main.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 100%;
+        width: 60%;
+    }
+}
+
+@media (max-width: 780px) {
+
+    .first-section {
+        &__header {
+            top: 20%;
+            max-width: 90%;
+        }
+
+        &__title {
+            font-size: 2.4rem;
+            letter-spacing: 3.5px;
+        }
+
+        &__subtitle {
+            font-size: 0.9rem;
+        }
+
+        &__cover{
+                width: 100%;
+        }
+    }
+}
